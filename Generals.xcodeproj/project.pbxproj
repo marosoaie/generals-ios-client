@@ -14,6 +14,9 @@
 		451EA9971F1956650063F35F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451EA9951F1956650063F35F /* LaunchScreen.storyboard */; };
 		451EA9A21F1956650063F35F /* GeneralsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA9A11F1956650063F35F /* GeneralsTests.swift */; };
 		451EA9AD1F1956650063F35F /* GeneralsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA9AC1F1956650063F35F /* GeneralsUITests.swift */; };
+		451EA9BB1F1956AD0063F35F /* GameGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA9BA1F1956AD0063F35F /* GameGridViewController.swift */; };
+		451EA9BE1F195B230063F35F /* CGSize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA9BD1F195B230063F35F /* CGSize+Extensions.swift */; };
+		451EA9C11F196B7B0063F35F /* GameGridViewController+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451EA9C01F196B7B0063F35F /* GameGridViewController+Setup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		451EA9A81F1956650063F35F /* GeneralsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		451EA9AC1F1956650063F35F /* GeneralsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralsUITests.swift; sourceTree = "<group>"; };
 		451EA9AE1F1956650063F35F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		451EA9BA1F1956AD0063F35F /* GameGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameGridViewController.swift; sourceTree = "<group>"; };
+		451EA9BD1F195B230063F35F /* CGSize+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Extensions.swift"; sourceTree = "<group>"; };
+		451EA9C01F196B7B0063F35F /* GameGridViewController+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameGridViewController+Setup.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 		451EA98B1F1956650063F35F /* Generals */ = {
 			isa = PBXGroup;
 			children = (
+				451EA9BF1F196B6B0063F35F /* GameGrid */,
+				451EA9BC1F195B130063F35F /* Extensions */,
 				451EA98C1F1956650063F35F /* AppDelegate.swift */,
 				451EA98E1F1956650063F35F /* ViewController.swift */,
 				451EA9901F1956650063F35F /* Main.storyboard */,
@@ -123,6 +131,23 @@
 				451EA9AE1F1956650063F35F /* Info.plist */,
 			);
 			path = GeneralsUITests;
+			sourceTree = "<group>";
+		};
+		451EA9BC1F195B130063F35F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				451EA9BD1F195B230063F35F /* CGSize+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		451EA9BF1F196B6B0063F35F /* GameGrid */ = {
+			isa = PBXGroup;
+			children = (
+				451EA9BA1F1956AD0063F35F /* GameGridViewController.swift */,
+				451EA9C01F196B7B0063F35F /* GameGridViewController+Setup.swift */,
+			);
+			path = GameGrid;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				451EA9BB1F1956AD0063F35F /* GameGridViewController.swift in Sources */,
 				451EA98F1F1956650063F35F /* ViewController.swift in Sources */,
+				451EA9C11F196B7B0063F35F /* GameGridViewController+Setup.swift in Sources */,
+				451EA9BE1F195B230063F35F /* CGSize+Extensions.swift in Sources */,
 				451EA98D1F1956650063F35F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7A25586DER;
 				INFOPLIST_FILE = Generals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mp.Generals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7A25586DER;
 				INFOPLIST_FILE = Generals/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mp.Generals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
